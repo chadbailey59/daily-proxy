@@ -29,11 +29,9 @@ The server will listen on port 3000 by default. You can change the port by setti
 PORT=8080 npm start
 ```
 
-## How it works
+## Deploying
 
-The proxy server will:
-1. Accept incoming requests on the specified port
-2. Check if the request host is *.daily.co or prod-ks.pluot.blue
-3. If matched, forward the request to the appropriate target
-4. If not matched, return a 404 response
-5. Handle WebSocket upgrade requests for supported domains
+Two different zero-config deployment options:
+
+* [Render.com](https://render.com/): Fork this repo and point it at a new web service on Render.com
+* [Fly.io](https://fly.io/): Clone the repo and run `fly launch` from the command line
